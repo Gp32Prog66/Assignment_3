@@ -1,15 +1,12 @@
 const express = require('express');
 const app = express();
-
-//Path
-app.get('/', (req,res)=>
-{
-    res.send("Hello World");
-    res.send("Testing this attempt again"); //Do you see this?
+//Added line for pull request homework here=
+app.get('/',(req,res)=> {
+    res.send("Hello, This is my module 3 homework assignment. This is my pull request test")
 });
 
-//Run Port
-app.listen(5508, () => {
-    console.log("Listening to Active Port");
-});
 
+
+app.listen(3000, () => {
+    console.log('listening to the active port')
+});
